@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <header-component></header-component>
+        <main class="main">
+            <h2>Lista de videos</h2>
+            <list-component v-bind:listado="lista"></list-component>
+        </main>
+        <form-component v-bind:open="open" v-bind:item="item"></form-component>
+        <confirm-component titulo="Mensaje" mensaje="¿Está seguro que desea eliminar registro?" confirm-text="Aceptar" cancel-text="Cancelar" v-bind:open="confirm" :cancel-callback="btnCancelarEliminar" :confirm-callback="btnConfirmarEliminar"></confirm-component>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="./js/componentes/confimacion.js"></script>
+<script src="./js/componentes/card.js"></script>
+<script src="./js/componentes/list.js"></script>
+<script src="./js/componentes/form.js"></script>
+<script src="./js/componentes/header.js"></script>
+<script src="./js/index.js"></script>
+
+</html>
