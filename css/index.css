@@ -190,5 +190,12 @@ ol {
     background-color: white;
     box-shadow: black 0px 0px 3px;
     width: 50%;
-    padding: 20px;
+}
+
+#app .confirmacion.open .container>* {
+    padding: 10px 20px;
+}
+
+#app .confirmacion.open .container>hr {
+    padding: 0px;
 }

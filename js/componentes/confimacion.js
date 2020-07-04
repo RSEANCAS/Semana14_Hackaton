@@ -12,10 +12,11 @@ Vue.component('confirm-component', {
     },
     template: `
         <div  v-bind:class="'confirmacion ' + (open == true ? 'open' : '')">
-            <div class="containter">
+            <div class="container">
                 <div class="header">
                     <h2 v-text="titulo"></h2>
                 </div>
+                <hr>
                 <div class="content">
                     <p v-text="mensaje"></p>
                 </div>
