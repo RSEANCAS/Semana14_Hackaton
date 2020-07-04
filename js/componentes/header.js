@@ -10,6 +10,7 @@ Vue.component("header-component", {
     methods: {
         btnAgregarClick: () => {
             app.open = true;
+            app.item = null;
         }
     },
     template: `

@@ -11,12 +11,10 @@ Vue.component('form-component', {
             },
             watch: {
                 item(newValue, oldValue) {
-                    if (newValue != null) {
-                        this.id = newValue.id;
-                        this.url.valor = newValue.url;
-                        this.titulo.valor = newValue.titulo;
-                        this.descripcion.valor = newValue.descripcion;
-                    }
+                    this.id = newValue == null ? null : newValue.id;
+                    this.url.valor = newValue == null ? null : newValue.url;
+                    this.titulo.valor = newValue == null ? null : newValue.titulo;
+                    this.descripcion.valor = newValue == null ? null : newValue.descripcion;
                 }
             },
             methods: {
